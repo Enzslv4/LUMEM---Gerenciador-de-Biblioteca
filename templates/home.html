@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bem-vindo ao LUMEN 📚</h1>
+<p>Sistema de gerenciamento de biblioteca.</p>
+<a href="{% url 'login' %}">Entrar</a>
+<a href="{% url 'register' %}">Cadastrar</a>
+{% endblock %}
