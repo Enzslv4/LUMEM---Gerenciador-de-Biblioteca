@@ -1,7 +1,13 @@
-<!-- {% extends 'base.html' %} -->
+{% extends 'base.html' %}
 {% block content %}
-<h1>Bem-vindo ao LUMEN 📚</h1>
-<p>Sistema de gerenciamento de biblioteca.</p>
-<a href="{% url 'login' %}">Entrar</a>
-<a href="{% url 'register' %}">Cadastrar</a>
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm border">
+    <div class="container-fluid py-5 text-center">
+        <h1 class="display-5 fw-bold text-dark">Bem-vindo ao LUMEN</h1>
+        <p class="col-md-12 fs-4 text-muted">Gerencie seus empréstimos e explore nosso acervo de forma simples e rápida.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Explorar Livros</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saiba Mais</button>
+        </div>
+    </div>
+</div>
 {% endblock %}
